@@ -1,4 +1,5 @@
 *.aux
+*.blg
 *.dvi
 /eoe2
 /svd-hdd.pdf

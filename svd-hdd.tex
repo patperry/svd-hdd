@@ -1,5 +1,14 @@
 \documentclass{eoeauth}
 
+\RequirePackage[OT1]{fontenc}
+\RequirePackage{perry-thesis-macros}
+
+\DeclareGraphicsExtensions{.png,.pdf}
+\graphicspath{{plots/}}
+
+\DeclareMathOperator*{\diag}{diag}
+\newcommand{\reals}{\mathbb{R}}
+\newtheorem{corol}{Corollary}
 
 \begin{document}
 
@@ -21,5 +30,66 @@ keyword1, keyword2, keyword2
 \end{keywords}
 
 \section{Introduction}
+
+A high-dimensional dataset with $n$ measurements on $p$ variables can
+be represented by an $n \times p$ data matrix $X$.  This matrix gets
+used, e.g. as a design matrix, modeling an external response $y$ as $y
+= X \beta + \varepsilon$ for some unknown coefficient and noise vectors
+$\beta$ and $\varepsilon$.  Alternatively, we may be interested in
+descriptive statistics of the dataset, which can be computed in terms
+of operations on the matrix $X$.  It is often desirable to work with
+$\hat X$, a low-rank approximation of the data matrix directly instead
+of working with $X$ directly.  We may either consider $\hat X$ to be a
+descriptive statistic or $X$, or we may consider $\hat X$ to be a
+filtered or noise-reduced version of $X$.
+
+The most prevalent low-rank matrix approximations are based on the
+singular value decomposition (SVD).  Given $X$, an $n \times p$ data
+matrix, the SVD factorizes $X$ as $X = U D V'$, where
+$U \in \reals^{n \times n}$ and $V \in \reals^{p \times p}$ are
+orthogonal matrices and $D \in \reals^{n \times p}$ is zero except on
+its diagonal.  The diagonal entries of $D$ are in decreasing order.
+For $1 \leq k \leq \min(n,p)$ define $d_k = D_{kk}$ to be the $k$th
+singular value of~$X$.  Similarly, for define $u_k$ to be the $k$th
+column of $U$ and define $v_k$ to be the $k$th column of $V$; these
+are called the $k$th left and right singular vectors of $X$.  For
+$0 \leq K \leq \min(n,p)$, define the rank-$K$ matrix
+\[
+  \hat X_K = \sum_{k=1}^{K} d_k u_k v_k',
+\]
+noting that $\hat X_{\min(n,p)} = X$.  It is well known that $\hat
+X_K$ is the best rank-$K$ approximation of $X$, in the sense that it
+minimizes the norm $\| X - \hat X \|$ for $\hat X$ any rank-$K$ matrix
+and $\| \cdot \|$ denoting either spectral or Frobenius norm.
+
+[GENEVERA: ADD PARAGRAPH ABOUT PENALIZED DECOMPOSITIONS]
+
+To fully understand the implications of using the singular value
+decomposition in a data-processing application, we need to understand
+how the SVD of $X$ behaves when the elements of $X$ are random.
+
+
+\section{Random Matrix Theory for the SVD}
+
+There are two regimes of interest for random data matrices.  In the
+first regime, the number of samples, $n$, is large relative to the number of
+variables, $p$, and in the second regime the two numbers are comparable.
+We call the first regime the ``classical'' regime and the second
+regime the ``modern'' regime.  The classical regime is caracterized by
+$n \to \infty$ and $p$ fixed; the modern regime is characterized by $n
+\to \infty$, $p \to \infty$, and $n/p \to \gamma$, where $\gamma$ is a
+fixed scalar in $(0,\infty)$.  The results we summarize consider the
+columns of $X'$, denoted $x_1, \dotsc, x_n$, to be independent and
+identically distributed (IID) observations.  We state the results for
+Gaussian random variables, but many of the results hold for
+arbitrary distributions with finite fourth moments.
+
+
+\clearpage
+
+\input{multivariate.tex}
+
+\bibliographystyle{plain}
+\bibliography{perry-thesis-refs}
 
 \end{document}
