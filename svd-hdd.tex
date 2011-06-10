@@ -1,12 +1,10 @@
 \documentclass{eoeauth}
 
-\RequirePackage[OT1]{fontenc}
-\RequirePackage{perry-thesis-macros}
-
 \DeclareGraphicsExtensions{.png,.pdf}
 \graphicspath{{plots/}}
 
-\DeclareMathOperator*{\diag}{diag}
+
+\newcommand{\Normal}{\mathrm{Normal }}
 \newcommand{\reals}{\mathbb{R}}
 \newtheorem{corol}{Corollary}
 
@@ -38,7 +36,7 @@ used, e.g. as a design matrix, modeling an external response $y$ as $y
 $\beta$ and $\varepsilon$.  Alternatively, we may be interested in
 descriptive statistics of the dataset, which can be computed in terms
 of operations on the matrix $X$.  It is often desirable to work with
-$\hat X$, a low-rank approximation of the data matrix directly instead
+$\hat X$, a low-rank approximation of the data matrix instead
 of working with $X$ directly.  We may either consider $\hat X$ to be a
 descriptive statistic or $X$, or we may consider $\hat X$ to be a
 filtered or noise-reduced version of $X$.
@@ -82,14 +80,51 @@ fixed scalar in $(0,\infty)$.  The results we summarize consider the
 columns of $X'$, denoted $x_1, \dotsc, x_n$, to be independent and
 identically distributed (IID) observations.  We state the results for
 Gaussian random variables, but many of the results hold for
-arbitrary distributions with finite fourth moments.
+arbitrary distributions with finite fourth moments.  Throughout, we
+assume that $x_1, x_2, \dotsc, x_n$ are independent $\Normal(0, \Sigma)$ random
+variables for some $p \times p$ covariance matrix~$\Sigma$, and that
+\(
+  X' =
+  \begin{bmatrix}
+    x_1 & x_2 & \dots & x_n
+  \end{bmatrix}.
+\)
+
+The singular value decomposition of $X$ is closely related to the
+eigendecomposition of $X' \, X$.  Specifically, if $U D V'$ is an SVD
+of $X$, then $V \, (D' D) \, V'$ is an eigendecomposition of $X' X$.
+Thus, the eigenvalues of $X' X$ are the squares of the singular values
+of $X$, and the eigenvectors of $X' X$ are the right singular vectors
+of $X$.  Conversely, if $X' X = V \Lambda V'$ an eigendecomposition of
+$X' X$, the the first $\min(n,p)$ left singular vectors of $X$ are the
+first $\min(n,p)$ columns of $X V \Lambda^\dagger$, where
+$\Lambda^\dagger$ denotes the Moore-Penrose pseudoinverse of $\Lambda$.
+With these identities, the SVD of $X$ can be analyzed in terms of the
+eigendecomposition of $X' X$.
 
 
-\clearpage
+\subsection{Classical results}
+[PATRICK]
 
-\input{multivariate.tex}
+\subsection{Bulk of the spectrum}
+[PATRICK]
 
-\bibliographystyle{plain}
-\bibliography{perry-thesis-refs}
+\subsection{Edge of the spectrum}
+[PATRICK]
+
+\subsection{Eigenvectors}
+[PATRICK]
+
+\subsection{Results for spike eigenvectors}
+[PATRICK]
+
+\section{Penalized SVDs (?)}
+[GENEVERA]
+
+\section{Application/Example (?)}
+
+\section{Conclusion}
+
+
 
 \end{document}
