@@ -1,32 +1,9 @@
 \begin{thebibliography}{10}
 
-\bibitem{anderson1963atp}
-T.W. Anderson.
-\newblock {Asymptotic theory for principal component analysis}.
-\newblock {\em Ann. Math. Stat.}, 34(1):122--148, 1963.
-
-\bibitem{bai2007ael}
-Z.D. Bai, B.Q. Miao, and G.M. Pan.
-\newblock {On asymptotics of eigenvectors of large sample covariance matrix}.
-\newblock {\em Ann. Probab.}, 35(4):1532--1572, 2007.
-
-\bibitem{bai2003crs}
-Z.D. Bai, B.Q. Miao, and J.F. Yao.
-\newblock {Convergence rates of the spectral distributions of large sample
-  covariance matrices}.
-\newblock {\em SIAM J. Matrix Anal. Appl.}, 25(1):105--127, 2003.
-
-\bibitem{bai1998neo}
-Z.D. Bai and J.W. Silverstein.
-\newblock {No eigenvalues outside the support of the limiting spectral
-  distribution of large dimensional sample covariance matrices}.
-\newblock {\em Ann. Probab.}, 26(1):316--345, 1998.
-
-\bibitem{bai2004clt}
-Z.D. Bai and J.W. Silverstein.
-\newblock {CLT for linear spectral statistics of large-dimensional sample
-  covairance matrices}.
-\newblock {\em Ann. Probab.}, 32(1A):553--605, 2004.
+\bibitem{anderson63}
+T.~W. Anderson.
+\newblock Asymptotic theory for principal component analysis.
+\newblock {\em Ann. Math. Statist.}, 34:122--148, 1963.
 
 \bibitem{bai1988nle}
 Z.D. Bai, J.W. Silverstein, and Y.Q. Yin.
@@ -34,71 +11,10 @@ Z.D. Bai, J.W. Silverstein, and Y.Q. Yin.
   covariance matrix}.
 \newblock {\em J. Multivariate Anal.}, 26(2):166--168, 1988.
 
-\bibitem{bai1993lse}
-Z.D. Bai and Y.Q. Yin.
-\newblock {Limit of the smallest eigenvalue of a large dimensional sample
-  covariance matrix}.
-\newblock {\em Ann. Probab.}, 21(3):1275--1294, 1993.
-
-\bibitem{baker1998rme}
-T.H. Baker, P.J. Forrester, and P.A. Pearce.
-\newblock {Random matrix ensembles with an effective extensive external
-  charge}.
-\newblock {\em J. Phys. Math. Gen.}, 31(29):6087--6102, 1998.
-
-\bibitem{edelman1988ecn}
-A.~Edelman.
-\newblock {Eigenvalues and condition numbers of random matrices}.
-\newblock {\em SIAM J. Matrix Anal. Appl.}, 9(4):543--560, 1988.
-
-\bibitem{elkaroui2003lew}
-N.~El~Karoui.
-\newblock {On the largest eigenvalue of Wishart matrices with identity
-  covariance when $n$, $p$ and $p/n$ tend to infinity}.
-\newblock arXiv:math/0309355v1 [math.ST], 2003.
-
-\bibitem{elkaroui2006mpt}
-N.~El~Karoui.
-\newblock {A rate of convergence result for the largest eigenvalue of complex
-  white Wishart matrices}.
-\newblock {\em Ann. Probab.}, 34(6):2077--2117, 2006.
-
-\bibitem{elkaroui2007twl}
-N.~El~Karoui.
-\newblock {Tracy-Widom limit for the largest eigenvalue of a large class of
-  complex sample covariance matrices}.
-\newblock {\em Ann. Probab.}, 35(2):663--714, 2007.
-
 \bibitem{geman1980ltn}
 S.~Geman.
 \newblock {A limit theorem for the norm of random matrices}.
 \newblock {\em Ann. Probab.}, 8(2):252--261, 1980.
-
-\bibitem{grenander1977san}
-U.~Grenander and J.W. Silverstein.
-\newblock {Spectral analysis of networks with random topologies}.
-\newblock {\em SIAM J. Appl. Math.}, 32(2):499--519, 1977.
-
-\bibitem{guionnetlds}
-A.~Guionnet.
-\newblock {Large deviations and stochastic calculus for large random matrices}.
-\newblock {\em Probab. Surv.}, 1:72--172, 2004.
-
-\bibitem{guionnet2000csm}
-A.~Guionnet and O.~Zeitouni.
-\newblock {Concentration of the spectral measure for large matrices}.
-\newblock {\em Electro. Comm. Probab.}, 5:119--136, 2000.
-
-\bibitem{hastings1980bvp}
-S.~P. Hastings and J.~B. McLeod.
-\newblock A boundary value problem associated with the second {P}ainlev\'e
-  transcendent and the {K}orteweg-{d}e {V}ries equation.
-\newblock {\em Archive Rat. Mech. Anal.}, 73(1):31--51, 1980.
-
-\bibitem{hiai1998edw}
-F.~Hiai and D.~Petz.
-\newblock {Eigenvalue density of the Wishart matrix and large deviations}.
-\newblock {\em Inf. Dim. Anal. Quantum Probab. Rel. Top}, 1(4):633--646, 1998.
 
 \bibitem{johansson2000sfa}
 K.~Johansson.
@@ -111,120 +27,17 @@ I.M. Johnstone.
   components analysis}.
 \newblock {\em Ann. Statist.}, 29(2):295--327, 2001.
 
-\bibitem{jonsson1982slt}
-D.~Jonsson.
-\newblock {Some limit theorems for the eigenvalues of a sample covariance
-  matrix}.
-\newblock {\em J. Multivariate Anal.}, 12(1):1--38, 1982.
-
 \bibitem{jonsson1983ole}
 D.~Jonsson.
 \newblock {On the largest eigenvalue of a sample covariance matrix}.
 \newblock In P.R. Krishnaiah, editor, {\em Multivariate Analysis VI}.
   North-Holland, 1983.
 
-\bibitem{ma2008atw}
-Z.~Ma.
-\newblock {Accuracy of the Tracy-Widom limit for the largest eigenvalue in
-  white Wishart matrices}.
-\newblock arXiv:0810.1329v1 [math.ST], 2008.
-
-\bibitem{marcenko1967des}
-V.A. Mar{\v{c}}enko and L.A. Pastur.
-\newblock {Distribution of eigenvalues for some sets of random matrices}.
-\newblock {\em Sb. Math.}, 1(4):457--483, 1967.
-
-\bibitem{muirhead1982ams}
-R.J. Muirhead.
-\newblock {\em {Aspects of Multivariate Statistical Theory}}.
-\newblock John Wiley \& Sons, 1982.
-
-\bibitem{pastur2008clt}
-L.~Pastur and A.~Lytova.
-\newblock {Central limit theorem for linear eigenvalue statistics of random
-  matrices with independent entries}.
-\newblock arXiv:0809.4698v1 [math.PR], 2008.
-
-\bibitem{paul2006dse}
-D.~Paul.
-\newblock {Distribution of the smallest eigenvalue of a Wishart($N$,$n$) when
-  $N/n \to 0$}.
-\newblock Unpublished manuscript, 2006.
-
-\bibitem{peche2008url}
-S.~P\'ech\'e.
-\newblock {Universality results for largest eigenvalues of some sample
-  covariance matrix ensembles}.
-\newblock arXiv:0705.1701v2 [math.PR], 2008.
-
-\bibitem{perry2009mre}
-P.O. Perry and P.J. Wolfe.
-\newblock {Minimax rank estimation for subspace tracking}.
-\newblock arXiv:0906.3090v1 [stat.ME], 2009.
-
-\bibitem{silverstein1979reg}
-J.W. Silverstein.
-\newblock {On the randomness of eigenvectors generated from networks with
-  random topologies}.
-\newblock {\em SIAM J. Appl. Math.}, 37(2):235--245, 1979.
-
-\bibitem{silverstein1981dbe}
-J.W. Silverstein.
-\newblock {Describing the behavior of eigenvectors of random matrices using
-  sequences of measures on orthogonal groups}.
-\newblock {\em SIAM J. Math. Anal.}, 12(2):274--281, 1981.
-
 \bibitem{silverstein1984ole}
 J.W. Silverstein.
 \newblock {On the largest eigenvalue of a large dimensional sample covariance
   matrix}.
 \newblock Unpublished manuscript, 1984.
-
-\bibitem{silverstein1984slt}
-J.W. Silverstein.
-\newblock {Some limit theorems on the eigenvectors of large dimensional sample
-  covariance matrices}.
-\newblock {\em J. Multivariate Anal.}, 15(3):295--324, 1984.
-
-\bibitem{silverstein1985sel}
-J.W. Silverstein.
-\newblock {The smallest eigenvalue of a large dimensional Wishart matrix}.
-\newblock {\em Ann. Probab.}, 13(4):1364--1368, 1985.
-
-\bibitem{silverstein1989eld}
-J.W. Silverstein.
-\newblock {On the eigenvectors of large dimensional sample covariance
-  matrices}.
-\newblock {\em J. Multivariate Anal.}, 30(1):1--16, 1989.
-
-\bibitem{silverstein1990wcr}
-J.W. Silverstein.
-\newblock {Weak convergence of random functions defined by the eigenvectors of
-  sample covariance matrices}.
-\newblock {\em Ann. Probab.}, 18(3):1174--1194, 1990.
-
-\bibitem{silverstein1995sce}
-J.W. Silverstein.
-\newblock {Strong convergence of the emperical distribution of eigenvalues of
-  large dimensional random matrices}.
-\newblock {\em J. Multivariate Anal.}, 55(2):331--229, 1995.
-
-\bibitem{silverstein1995ede}
-J.W. Silverstein and Z.D. Bai.
-\newblock {On the empirical distribution of eigenvalues of a class of large
-  dimensional random matrices}.
-\newblock {\em J. Multivariate Anal.}, 54(2):175--192, 1995.
-
-\bibitem{soshnikov2002nud}
-A.~Soshnikov.
-\newblock {A note on universality of the distribution of the largest
-  eigenvalues in certain sample covariance matrices}.
-\newblock {\em J. Stat. Phys.}, 108(5):1033--1056, 2002.
-
-\bibitem{tao2009rmd}
-T.~Tao and V.~Vu.
-\newblock {Random matrices: The distribution of the smallest singular values}.
-\newblock arXiv:0903.0614v1 [math.PR], 2009.
 
 \bibitem{tracy1994lsd}
 C.A. Tracy and H.~Widom.
@@ -236,27 +49,10 @@ C.A. Tracy and H.~Widom.
 \newblock {On orthogonal and symplectic matrix ensembles}.
 \newblock {\em Comm. Math. Phys.}, 177(3):727--754, 1996.
 
-\bibitem{wachter1978slr}
-K.W. Wachter.
-\newblock {The strong limits of random matrix spectra for sample matrices of
-  independent elements}.
-\newblock {\em Ann. Probab.}, 6(1):1--18, 1978.
-
-\bibitem{yin1986lsd}
-Y.Q. Yin.
-\newblock {Limiting spectral distribution for a class of random matrices}.
-\newblock {\em J. Multivariate Anal.}, 20(1):50--68, 1986.
-
 \bibitem{yin1988lle}
 Y.Q. Yin, Z.D. Bai, and P.R. Krishnaiah.
 \newblock {On the limit of the largest eigenvalue of the large dimensional
   sample covariance matrix}.
 \newblock {\em Probab. Theor. Relat. Field.}, 78(4):509--521, 1988.
-
-\bibitem{yin1983lte}
-Y.Q. Yin and P.R. Krishnaiah.
-\newblock {A limit theorem for the eigenvalues of product of two random
-  matrices}.
-\newblock {\em J. Multivariate Anal.}, 13(4):489--507, 1983.
 
 \end{thebibliography}

@@ -102,21 +102,113 @@ $\Lambda^\dagger$ denotes the Moore-Penrose pseudoinverse of $\Lambda$.
 With these identities, the SVD of $X$ can be analyzed in terms of the
 eigendecomposition of $X' X$.
 
+Using properties of the Gaussian distribution, one
+can show that for any fixed $n\times n$ orthogonal matrix $O$, the
+product $O X$ has the same distribution as $X$.  Thus, the
+distribution of the left singular vectors of $X$ is invariant under
+multiplication on the left by an orthogonal matrix, i.e. $O U
+\overset{d}{=} U$ for any fixed orthgonal $O$.  Thus, the
+first $\min(n,p)$ columns of $U$ must have the same distribution as
+the first $\min(n,p)$ columns of a uniformly-distributed (Haar)
+orthogonal matrix.  Now, $X' X$ is a complete sufficient statistic
+for $\Sigma$ and $U$ is ancilarly, so by Basu's theorem, $U$ is
+independent of $D$ and $V$.  Since we have just derived the
+distribution of $U$, the distribution of $X' X$ completely
+characterizes the behavior of the SVD of $X$.
+
+In the sequel, we let $\Sigma = \Phi \Lambda \Phi'$ be an
+eigendecomposition of $\Sigma$.  We assume that the eigenvalues of
+$\Sigma$ are ordered as $\lambda_1 \geq \lambda_2 \geq \dotsc \geq \lambda_p \geq 0$.
+The eigendecomposition of $\Sigma$ is not unique since we can multiply
+a column of $\Phi$ by $-1$ and still get the same product $\Phi
+\Lambda \Phi'$; more generally, we can arbitrarily rotate
+eigenspaces.  The same indeterminacy problems exist for $V$.  To deal
+with these indeterminancies, when we state results for the
+eigendecomposition of $X' X$ we assume that the signs of the columns
+are chosen such that $\varphi_j ' v_j \, > 0$.
+
 
 \subsection{Classical results}
-[PATRICK]
 
-\subsection{Bulk of the spectrum}
-[PATRICK]
+In the classical regime, $p$ is fixed and $n$ increases
+asymptotically.  By the strong law of large numbers, $\tfrac{1}{n} X'
+X \overset{\text{a.s.}}{\to} \Sigma$, so the eigendecomposition of
+$\tfrac{1}{n} X' X$ converges to that of $\Sigma$ (up to
+identifiability constraints).
+Anderson derived the distribution of $X' X$ when $p$ is fixed and $n$
+increases asymptotically \cite{anderson63}.  When the eigenvalues of $\Sigma$ are
+distinct, his result implies the following: after appropriate cenering
+and scaling, $D^2$ and $V$ converge jointly in distribution and their limits are independent;
+tor all $1 \leq j \leq p$
+\[
+  \frac{d^2_{j} - n \lambda_j}{\sqrt{n}}
+    \overset{d}{\to}
+      \mathrm{Normal}\left( 0, \, 2 \lambda_j^2 \right),
+\qquad\text{and}\qquad
+   \sqrt{n} \left( \Phi' V - I \right) \overset{d}{\to} F,
+\]
+where $F$ is a skew-symmetric matrix with elements above the 
+diagonal independent of each other and distributed as 
+\(
+  F_{jk}
+    \sim
+      \mathrm{Normal} \left(
+        0, \,
+        \frac{\lambda_j \lambda_k}
+        {\left( \lambda_j - \lambda_k \right)^2}
+      \right),
+      \quad
+      \text{for all $1 \leq j < k \leq p$.}
+\)
+Anderson's result is more general, and handles the case when the
+$\lambda_j$ are not all unique.
 
-\subsection{Edge of the spectrum}
-[PATRICK]
 
-\subsection{Eigenvectors}
-[PATRICK]
+\subsection{Modern results}
 
-\subsection{Results for spike eigenvectors}
-[PATRICK]
+In the modern asymptotic regime, the dimension increases with the
+sample size $n$, so that the sequence of column dimensions $p_n$
+replaces the fixed column dimension $p$, and the sequence of
+covariance matrices $\Sigma_n$ replaces the fixed covariance matrix $\Sigma$.
+Even though  $\tfrac{1}{n} X' X$ converges elementwise to $\Sigma_n$,
+the eigendecomposition of the former does not converge to the
+eigendecomposition of the latter.  Even restricting attention to the
+top $K$ eigenvalue-eigenvector pairs, the sample quantities are inconsistent.
+
+
+In the ``null'' case, when $\Sigma_n = I$ and $\tfrac{n}{p} \to \gamma$,
+the scaled eigenvalue $\frac{d_1^2}{n}$ converges almost surely to
+$(1 + \gamma^{-1/2})^2$ \cite{geman1980ltn,jonsson1983ole}.  Similar
+behavior (asymptotic upward bias) holds with a different limit for
+non-identity $\Sigma_n$
+\cite{silverstein1984ole,yin1988lle,bai1988nle}. 
+
+\subsubsection{The Null Case}
+
+Johnstone \cite{johnstone2001dle} and Johansson \cite{johansson2000sfa}
+and derived the limiting null distribution (after appropriate
+centering and scaling) of $d_1^2$ for real and complex data when
+$\Sigma_n = I$.  With center
+$\mu_n = \left(\sqrt{n-\tfrac{1}{2}} + \sqrt{p_n - \tfrac{1}{2}}\right)^2$ and scale
+$\sigma_n = \left(\sqrt{n-\tfrac{1}{2}} + \sqrt{p_n -
+    \tfrac{1}{2}}\right) \left(1/\sqrt{n-\tfrac{1}{2}} + 1/\sqrt{p_n -
+    \tfrac{1}{2}}\right)^{1/3}$, 
+the quantity
+\(
+\frac{d^2_1 - \mu_n}{\sigma_n}
+\)
+converges in distribution to a random variable with the Tracy-Widom
+law of order $1$.  This distribution first appeared as the limit
+(after appropriate centering and scaling) of the maximum eigenvalue
+from an $n \times n$ symmetric matrix with idepending Gaussian entries
+having variance $2$ on the diagonal and variance $1$ otherwise
+\cite{tracy1994lsd, tracy1996oas}.
+
+\subsubsection{The Alternative Case}
+ The popular ``alternative'' case is when the eigenvalues of $\Sigma_n$ are
+``spiked,'' so that the top few eigenvalues are larger than the rest.
+
+
 
 \section{Penalized SVDs (?)}
 [GENEVERA]
@@ -125,6 +217,7 @@ eigendecomposition of $X' X$.
 
 \section{Conclusion}
 
-
+\bibliographystyle{plain}
+\bibliography{sources,perry-thesis-refs}
 
 \end{document}
