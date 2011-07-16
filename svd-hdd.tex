@@ -176,6 +176,8 @@ eigendecomposition of the latter.  Even restricting attention to the
 top $K$ eigenvalue-eigenvector pairs, the sample quantities are inconsistent.
 
 
+\subsubsection{The Null Case}
+
 In the ``null'' case, when $\Sigma_n = I$ and $\tfrac{n}{p} \to \gamma$,
 the scaled eigenvalue $\frac{d_1^2}{n}$ converges almost surely to
 $(1 + \gamma^{-1/2})^2$ \cite{geman1980ltn,jonsson1983ole}.  Similar
@@ -183,12 +185,15 @@ behavior (asymptotic upward bias) holds with a different limit for
 non-identity $\Sigma_n$
 \cite{silverstein1984ole,yin1988lle,bai1988nle}. 
 
-\subsubsection{The Null Case}
-
 Johnstone \cite{johnstone2001dle} and Johansson \cite{johansson2000sfa}
 and derived the limiting null distribution (after appropriate
 centering and scaling) of $d_1^2$ for real and complex data when
-$\Sigma_n = I$.  With center
+$\Sigma_n = I$.  This limiting distribution is the so-called
+Tracy-Widom distribution of order $1$, which first appeared as the limit
+(after appropriate centering and scaling) of the maximum eigenvalue
+from a certain $n \times n$ symmetric matrix with independent Gaussian entries.
+\cite{tracy1994lsd, tracy1996oas}.
+With center
 $\mu_n = \left(\sqrt{n-\tfrac{1}{2}} + \sqrt{p_n - \tfrac{1}{2}}\right)^2$ and scale
 $\sigma_n = \left(\sqrt{n-\tfrac{1}{2}} + \sqrt{p_n -
     \tfrac{1}{2}}\right) \left(1/\sqrt{n-\tfrac{1}{2}} + 1/\sqrt{p_n -
@@ -198,11 +203,10 @@ the quantity
 \frac{d^2_1 - \mu_n}{\sigma_n}
 \)
 converges in distribution to a random variable with the Tracy-Widom
-law of order $1$.  This distribution first appeared as the limit
-(after appropriate centering and scaling) of the maximum eigenvalue
-from an $n \times n$ symmetric matrix with idepending Gaussian entries
-having variance $2$ on the diagonal and variance $1$ otherwise
-\cite{tracy1994lsd, tracy1996oas}.
+law of order $1$.  El~Karoui~\cite{elkaroui2006mpt} and
+Ma~\cite{ma2008atw} established the rate of convergence.
+
+
 
 Patterson, Price, and Reich \cite{patterson2006population} used these
 results to test for latent structure in high-dimensional genetic

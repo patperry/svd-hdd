@@ -29,6 +29,12 @@ J.~Baik and J.W. Silverstein.
   models}.
 \newblock {\em J. Multivariate Anal.}, 97(6):1382--1408, 2006.
 
+\bibitem{elkaroui2006mpt}
+N.~El~Karoui.
+\newblock {A rate of convergence result for the largest eigenvalue of complex
+  white Wishart matrices}.
+\newblock {\em Ann. Probab.}, 34(6):2077--2117, 2006.
+
 \bibitem{geman1980ltn}
 S.~Geman.
 \newblock {A limit theorem for the norm of random matrices}.
@@ -70,6 +76,12 @@ S.~Kritchman and B.~Nadler.
   and random matrix theory.
 \newblock {\em Signal Processing, IEEE Transactions on}, 57(10):3930--3941,
   2009.
+
+\bibitem{ma2008atw}
+Z.~Ma.
+\newblock {Accuracy of the Tracy-Widom limit for the largest eigenvalue in
+  white Wishart matrices}.
+\newblock arXiv:0810.1329v1 [math.ST], 2008.
 
 \bibitem{patterson2006population}
 N.~Patterson, A.~L. Price, and D.~Reich.
