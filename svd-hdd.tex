@@ -204,16 +204,60 @@ from an $n \times n$ symmetric matrix with idepending Gaussian entries
 having variance $2$ on the diagonal and variance $1$ otherwise
 \cite{tracy1994lsd, tracy1996oas}.
 
+Patterson, Price, and Reich \cite{patterson2006population} used these
+results to test for latent structure in high-dimensional genetic
+data.  Kritchman and Nadler \cite{kritchman2008determining,kritchman2009non} did the
+same for chemometric and signal processing applications.
+
+
 \subsubsection{The Alternative Case}
  The popular ``alternative'' case is when the eigenvalues of $\Sigma_n$ are
 ``spiked,'' so that the top few eigenvalues are larger than the rest.
-Specifically, there is a finite $K$ independent of $n$ such that $\{ \lambda_{n,j} \}$,
-the eigenvalues of $\Sigma_n$, are such that $\lambda_{n,1}, \dotsc,
-\lambda_{n,K}$ are large (much greater than $1$), while $\lambda_{n,K+1} = \cdots =
-\lambda_{n,p} = 1$.
+Specifically, denote the eigenvalues of $\Sigma_n$ by $\lambda_{n,1},
+\dotsc, \lambda_{n,p}$.  The spiked model is parametrized by fixed
+values $\lambda_1, \dotsc, \lambda_K$, prescribed such
+that $\lambda_{n,k} = \lambda_k$ for $1 \leq k \leq K$ and
+$\lambda_{n,k} = 1$ otherwise.  Baik, Ben Arous, and P\'ech\'e
+\cite{baik2005ptl} discovered a phase
+transition for complex Gaussian data, whereby the eigenvalue $d_k^2$
+of $X' X$ behaves similarly to the null case
+whenever the corresponding eigenvalue $\lambda_{n,k}$
+lies below the critical threshold $1 + \gamma^{-1/2}$.  Baik and
+Silverstein~\cite{baik2006els}, Paul~\cite{paul2007ase}, and Bai and
+Yao~\cite{bai08central} extended this result.  For real data, if
+if $\lambda_{n,k} > 1 + \gamma^{-1/2}$, and $\lambda_{1}, \dotsc,
+\lambda_K$ are all distinct, then the following identities hold:
+\begin{enumerate}
+  \item $d_{k}^2 / n$ converges almost surely to
+    the value $\mu(\lambda_k) = \lambda_k (1 + \frac{\gamma}{\lambda_k
+      - 1})$;
+  \item $\left(\frac{d_{1}^2 - n \mu(\lambda_1)}{\sqrt{n}}, \dotsc,
+    \frac{d_{k}^2 - n \mu(\lambda_k)}{\sqrt{n}}\right)$ converges in
+    distribution to a mean-zero multivariate normal random variable with
+    diagonal covariance;
+  \item $\phi_{n,k}' v_k$ converges almost surely to
+    $\rho(\lambda_k) = \sqrt{\left(1 - \frac{\gamma}{(\lambda_k -
+          1)^2}\right) / \left(1 + \frac{\gamma}{\lambda_k - 1}\right)}$;
+  \item 
+     $\left(\sqrt{n}\big(\phi_{n,1}' v_1 - \rho(\lambda_1)\big), \dotsc,
+       \sqrt{n}\big(\phi_{n,k}' v_k - \rho(\lambda_k)\big)\right)$
+     converges in distribution to a mean-zero multivariate normal
+     random variable.
+\end{enumerate}
+On the other hand, if $\lambda_k \leq 1 + \gamma^{-1/2}$, then
+\begin{enumerate}
+  \item $d_k^2 / n$ converges almost surely to $(1 + \sqrt{\gamma})^2$
+  \item $\phi_{n,k}' v_k$ converges almost surely to $0$.
+\end{enumerate}
+In the case when $\lambda_1, \dotsc, \lambda_K$ are not all distinct,
+simililar behavior manifests, but the limiting distributions are no
+longer Gaussian.
 
-[PATRICK TO ADD RESULTS ABOUT LIMITS AND LIMITTING DISTRIBUTIONS IN
-SPIKED CASE]
+Harding~\cite{harding2008explaining} used the phase transition
+behavior to explain the apparent empirical lack of latent
+structure in arbitrage pricing data.  Perry and
+Wolfe~\cite{perry2010minimax} use these results to estimate the number
+of latent factors in signal processing applications.
 
 
 

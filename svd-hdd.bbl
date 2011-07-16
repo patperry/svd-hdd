@@ -5,16 +5,40 @@ T.~W. Anderson.
 \newblock Asymptotic theory for principal component analysis.
 \newblock {\em Ann. Math. Statist.}, 34:122--148, 1963.
 
+\bibitem{bai08central}
+Z.~Bai and J.-f. Yao.
+\newblock Central limit theorems for eigenvalues in a spiked population model.
+\newblock {\em Annales de l'Institut Henri Poincar\'e - Probabilit\'es et
+  Statistiques}, 44:447--474, 2008.
+
 \bibitem{bai1988nle}
 Z.D. Bai, J.W. Silverstein, and Y.Q. Yin.
 \newblock {A note on the largest eigenvalue of a large dimensional sample
   covariance matrix}.
 \newblock {\em J. Multivariate Anal.}, 26(2):166--168, 1988.
 
+\bibitem{baik2005ptl}
+J.~Baik, G.~Ben~Arous, and S.~P\'ech\'e.
+\newblock {Phase transition of the largest eigenvalue for nonnull complex
+  sample covariance matrices}.
+\newblock {\em Ann. Probab.}, 33(5):1643--1697, 2005.
+
+\bibitem{baik2006els}
+J.~Baik and J.W. Silverstein.
+\newblock {Eigenvalues of large sample covariance matrices of spiked population
+  models}.
+\newblock {\em J. Multivariate Anal.}, 97(6):1382--1408, 2006.
+
 \bibitem{geman1980ltn}
 S.~Geman.
 \newblock {A limit theorem for the norm of random matrices}.
 \newblock {\em Ann. Probab.}, 8(2):252--261, 1980.
+
+\bibitem{harding2008explaining}
+M.~C. Harding.
+\newblock Explaining the single factor bias of arbitrage pricing models in
+  finite samples.
+\newblock {\em Economics Letters}, 99(1):85--88, 2008.
 
 \bibitem{johansson2000sfa}
 K.~Johansson.
@@ -32,6 +56,37 @@ D.~Jonsson.
 \newblock {On the largest eigenvalue of a sample covariance matrix}.
 \newblock In P.R. Krishnaiah, editor, {\em Multivariate Analysis VI}.
   North-Holland, 1983.
+
+\bibitem{kritchman2008determining}
+S.~Kritchman and B.~Nadler.
+\newblock Determining the number of components in a factor model from limited
+  noisy data.
+\newblock {\em Chemometrics and Intelligent Laboratory Systems}, 94(1):19--32,
+  2008.
+
+\bibitem{kritchman2009non}
+S.~Kritchman and B.~Nadler.
+\newblock Non-parametric detection of the number of signals: Hypothesis testing
+  and random matrix theory.
+\newblock {\em Signal Processing, IEEE Transactions on}, 57(10):3930--3941,
+  2009.
+
+\bibitem{patterson2006population}
+N.~Patterson, A.~L. Price, and D.~Reich.
+\newblock Population structure and eigenanalysis.
+\newblock {\em PLoS genetics}, 2(12):e190, 2006.
+
+\bibitem{paul2007ase}
+D.~Paul.
+\newblock {Asymptotics of sample eigenstructure for a large dimensional spiked
+  covariance model}.
+\newblock {\em Stat. Sinica}, 17(4):1617--1642, 2007.
+
+\bibitem{perry2010minimax}
+P.~O. Perry and P.~J. Wolfe.
+\newblock Minimax rank estimation for subspace tracking.
+\newblock {\em Selected Topics in Signal Processing, IEEE Journal of},
+  4(3):504--513, 2010.
 
 \bibitem{silverstein1984ole}
 J.W. Silverstein.
